@@ -5,7 +5,9 @@ import view.HistogramDisplay;
 import model.Histogram;
 import model.Mail;
 import view.MailHistogramBuilder;
-import view.MailListReader;
+import static view.MailListReader.read;
+import static view.MailListReader.read;
+
 
 /**
  * Representación gráfica de un Histograma leyendo los datos
@@ -34,8 +36,9 @@ public class Kata5P2 {
 
     public static void input() {
         try {
-            fileName = new String("C:\\Users\\angel\\OneDrive\\Documentos\\NetBeansProjects\\Kata4\\txtFileEmail\\email.txt");
-            mailList = MailListReader.read(fileName);
+           // fileName = new String("C:\\Users\\angel\\OneDrive\\Documentos\\NetBeansProjects\\Kata4\\txtFileEmail\\email.txt");
+           // mailList = MailListReader.read(fileName);
+           mailList = read();
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error con el fichero");
         }

@@ -18,10 +18,10 @@ import model.Mail;
  */
 public class MailListReader {
     
-    public static List<Mail> read(String fileName) throws Exception{
+    public static List<Mail> read() throws Exception{
         
         List<Mail> lista = new ArrayList<>();
-        File fichero = new File(fileName);
+        File fichero = new File("C:\\Users\\angel\\OneDrive\\Documentos\\NetBeansProjects\\Kata5P2\\txtFileEmail\\email.txt");
         
         try{
             Scanner scan = new Scanner(fichero);
